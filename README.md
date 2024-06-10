@@ -1,4 +1,4 @@
-# ChatBot
+# 🤖 ChatBot
 
 This repository contains a simple chatbot implemented in Python using TensorFlow and scikit-learn. The chatbot is trained on a set of intents defined in a JSON file and uses a neural network model to classify user input and respond appropriately.
 
@@ -6,24 +6,24 @@ This repository contains a simple chatbot implemented in Python using TensorFlow
 
 Before you begin, ensure you have met the following requirements:
 
-- Python 3.6 or later installed on your system
-- Required Python packages installed (see below)
+- 🐍 Python 3.6 or later installed on your system
+- 📦 Required Python packages installed (see below)
 
 ## Installation
 
-1. Clone the repository to your local machine:
+1. 🚀 Clone the repository to your local machine:
 
    ```sh
-   git clone https://github.com/Akhil-Pothanapalli/chatbot_keras.git
+   git clone https://github.com/your-username/chatbot.git
    ```
 
-2. Navigate to the project directory:
+2. 📂 Navigate to the project directory:
 
    ```sh
    cd chatbot
    ```
 
-3. Install the required packages:
+3. 📥 Install the required packages:
 
    ```sh
    pip install -r requirements.txt
@@ -31,26 +31,26 @@ Before you begin, ensure you have met the following requirements:
 
 ## Files
 
-- `intents.json`: Contains the training data for the chatbot, structured in intents.
-- `chat_model`: Pre-trained model file.
-- `tokenizer.pickle`: Tokenizer object file for preprocessing input data.
-- `label_encoder.pickle`: Label encoder object file for transforming labels.
+- `📁 intents.json`: Contains the training data for the chatbot, structured in intents.
+- `📁 chat_model`: Pre-trained model file.
+- `📁 tokenizer.pickle`: Tokenizer object file for preprocessing input data.
+- `📁 label_encoder.pickle`: Label encoder object file for transforming labels.
 
 ## Usage
 
-1. Ensure you have the `intents.json`, `chat_model`, `tokenizer.pickle`, and `label_encoder.pickle` files in the project directory.
+1. Ensure you have the `📁 intents.json`, `📁 chat_model`, `📁 tokenizer.pickle`, and `📁 label_encoder.pickle` files in the project directory.
 
-2. Run the chatbot:
+2. ▶️ Run the chatbot:
 
    ```sh
    python chatbot.py
    ```
 
-3. Start interacting with the bot. Type your messages and press Enter. Type `quit` to stop the interaction.
+3. 💬 Start interacting with the bot. Type your messages and press Enter. Type `quit` to stop the interaction.
 
 ## Code Overview
 
-### Loading Required Libraries
+### 📜 Loading Required Libraries
 
 ```python
 import json
@@ -64,7 +64,7 @@ import random
 import pickle
 ```
 
-### Loading Data
+### 📄 Loading Data
 
 The intents are loaded from a JSON file:
 
@@ -73,7 +73,7 @@ with open("intents.json") as file:
     data = json.load(file)
 ```
 
-### Chat Function
+### 💻 Chat Function
 
 The main `chat` function loads the trained model, tokenizer, and label encoder. It then enters an interactive loop where it accepts user input, processes it, and prints the chatbot's response:
 
@@ -106,8 +106,14 @@ chat()
 
 ## Acknowledgements
 
-- TensorFlow
-- scikit-learn
-- Colorama
+- 🌐 TensorFlow
+- 📊 scikit-learn
+- 🎨 Colorama
+
+---
+
+Feel free to modify the code and intents to suit your needs. Contributions are welcome!
+
+For any questions or issues, please open an issue on the GitHub repository.
 
 - Thank you Amila Viraj and I his medium post helped me in this learning journey - https://towardsdatascience.com/how-to-build-your-own-chatbot-using-deep-learning-bb41f970e281
